@@ -1,0 +1,87 @@
+/*
+Theme Name: Avada Child Theme - Reflect Tech
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+*/
+
+/* Less Mixins */
+
+.transition (@transition: all 0.2s ease-in-out) {
+	-webkit-transition:@transition;
+	-moz-transition:@transition;
+	-o-transition:@transition;
+	transition:@transition;
+}
+
+.transform(@string){
+	-webkit-transform:@string;
+	-moz-transform:@string;
+	-ms-transform:@string;
+	-o-transform:@string;
+	transform:@string;
+}
+
+.border-radius (@border-radius: 0px) {
+	-webkit-border-radius:@border-radius;
+	-moz-border-radius:@border-radius;
+	border-radius:@border-radius;
+}
+
+.box-shadow (@box-shadow: rgba(0,0,0,0)) {
+	-webkit-box-shadow:@box-shadow;
+	-moz-box-shadow:@box-shadow;
+	box-shadow:@box-shadow;
+}
+
+.bg-clip(){
+	-moz-background-clip:padding!important;
+	-webkit-background-clip:padding!important;
+	background-clip:padding-box!important;
+}
+
+.gradient (@degree: -45deg, @startColor: #000, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, @degree, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(@degree, @startColor, @endColor);
+	background: -moz-linear-gradient(@degree, @startColor, @endColor);
+	background: -ms-linear-gradient(@degree, @startColor, @endColor);
+	background: -o-linear-gradient(@degree, @startColor, @endColor);
+}
+
+.uppercase(){text-transform:uppercase!important;}
+ 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Colours */
+
+@white:  	#FFF!important;		/* White			*/
+@black:		#000!important;		/* Black 			*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* MAIN */
+
+body{-webkit-font-smoothing:subpixel-antialiased!important;overflow:hidden;}
+a:hover{.transition (@transition: all 0.2s ease-in-out);}
+.hover-type-zoomin:hover{
+	.fusion-column-inner-bg-image{opacity:1!important;}
+}
+iframe{border:none!important;}
+
+
+.cookietable{width:100%;border:1px solid #ccc;border-right:1px solid #ccc;border-left:1px solid #ccc;margin-bottom:30px;
+	tr.ct1{width:100%;padding:10px;}
+	td.ct2{width:15%;padding:10px;border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+	td.ct3{width:85%;padding:10px;border-bottom:1px solid #ccc;}
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES //////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 800px) {
+
+	
+}
